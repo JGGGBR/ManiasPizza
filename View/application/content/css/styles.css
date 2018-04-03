@@ -1,0 +1,291 @@
+html,
+body {
+  height: 100%;
+}
+
+body{
+	background-color: #fff8e9;
+}
+
+/**************** common ****************/
+.relative-position{
+	position: relative;
+}
+
+/**************** wrap ****************/
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -80px;
+  padding: 125px 0 80px;
+}
+
+/**************** footer ****************/
+#footer {
+	height: 80px;
+	border-top: 1px solid #cdc7bb;
+}
+
+#footer > .container .creditos {
+	font-size:12px;
+	margin-top: 8px;
+}
+
+#footer > .container p{
+	margin: 0;
+}
+
+#footer > .container {
+	margin-top:25px;
+	font-size:13px;
+}
+
+#footer > .container a{
+	color: #a1a1a0;
+}
+
+#footer > .container  img{
+	vertical-align:bottom;
+}
+
+/**************** navbar ****************/
+.navbar-inverse{
+	font-family: 'Istok Web', sans-serif;
+	background-color: #fff8e9;
+	border-bottom: none;
+	min-height:125px;
+    margin-bottom:0;
+}
+
+    .navbar-inverse .navbar-header {
+        float:right;
+    }
+
+        .navbar-inverse .navbar-header .navbar-brand {
+            margin-top:30px;
+            margin-left:0;
+            padding:0;
+        }
+
+.navbar-inverse  .navbar-nav{
+	margin-top:50px;
+}
+
+.navbar-inverse  .navbar-nav > li > a{
+	color: #490000;
+	font-size:21px;
+	transition: all .2s;
+	-moz-transition: all .2s;
+	-webkit-transition: all .2s;
+	-o-transition: all .2s;
+}
+
+.navbar-inverse  .navbar-nav > li > a .caret{
+	border-bottom-color: #490000;
+    border-top-color: #490000;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, 
+.navbar-inverse .navbar-nav > li > a:focus{
+	padding-top:13px;
+	color: #1c1c1b;
+}
+
+.navbar-inverse .navbar-nav > .open > a, 
+.navbar-inverse .navbar-nav > .open > a:hover, 
+.navbar-inverse .navbar-nav > .open > a:focus{
+	padding-top:13px;
+	color: #490000;
+	background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > .open > a .caret, 
+.navbar-inverse .navbar-nav > .open > a:hover .caret, 
+.navbar-inverse .navbar-nav > .open > a:focus .caret{
+	border-bottom-color: #490000;
+    border-top-color: #490000;
+}
+
+.navbar-nav > li > .dropdown-menu{
+	background-color: rgba(255,248,233, 0.9);
+}
+
+.navbar-nav > li > .dropdown-menu a{
+	font-size:17px;
+	color: #490000;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus{
+	background-color: #F5E9D3;
+}
+
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a:focus{
+	color: #490000;
+	font-weight:bold;
+	background-color: #fff8e9;
+	padding-top: 15px;
+}
+
+.navbar-brand .nome-logo{
+	text-indent: -9999px;
+	display: none;
+}
+
+.navbar #custom-line{
+	margin:0;
+	padding:0;
+	border-bottom: 1px solid #562107;
+    border-top: 1px solid #BBA28F;
+    box-shadow: 0 1px 0 #784C34;
+	position:absolute;
+	top: 80px;
+}
+
+/**************** carousel ****************/
+.carousel-control .icon-prev:before,
+.carousel-control .icon-next:before{
+	content:none;
+}
+
+.carousel-control .icon-prev, 
+.carousel-control .icon-next{
+	margin-top:-65px;
+	width: 35px;
+	height: 130px;
+}
+
+.carousel-control .icon-prev{
+	background: url('../images/arrow-left.png') no-repeat transparent;
+}
+
+.carousel-control .icon-next{
+	background: url('../images/arrow-right.png') no-repeat transparent;
+}
+
+.carousel-control{
+	z-index:1;
+}
+
+/**************** media querys ****************/
+@media (max-width: 1200px){
+    #wrap {
+		padding-top: 125px;
+	}
+}
+@media (max-width: 992px) { 
+    /*#wrap {
+		padding-top: 110px;
+	}*/
+
+    .navbar-inverse .navbar-nav > li > a {
+        font-size:19px;
+    }
+}
+
+@media (max-width: 768px) {
+    #wrap {
+		padding-top: 71px;
+	}
+
+    .navbar-brand {
+        position: relative;
+        margin: 8px;
+    }
+
+    .navbar-inverse {
+        min-height: 70px;
+        background-color: #fffbe2;
+    }
+
+        .navbar-inverse .navbar-header {
+            float: none;
+        }
+
+            .navbar-inverse .navbar-header .navbar-brand {
+                padding:0;
+                margin: 7px 10px !important;
+            }
+
+    .navbar-toggle {
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+
+    .navbar-inverse .navbar-nav {
+        margin-top: 10px;
+    }
+
+        .navbar-inverse .navbar-nav > li > a {
+            padding-top: 15px !important;
+            padding-bottom: 15px;
+            color: #000000;
+            font-size: 17px;
+            transition: none;
+            -moz-transition: none;
+            -webkit-transition: none;
+            -o-transition: none;
+        }
+
+            .navbar-inverse .navbar-nav > li > a:hover,
+            .navbar-inverse .navbar-nav > li > a:focus {
+                background-color: #f0ebce;
+                color: #000000;
+            }
+
+        .navbar-inverse .navbar-nav > .active > a,
+        .navbar-inverse .navbar-nav > .active > a:hover,
+        .navbar-inverse .navbar-nav > .active > a:focus {
+            color: #000000;
+            background-color: #f0ebce;
+        }
+
+    .navbar-inverse .navbar-nav > li > a {
+        font-size:17px;
+    }
+}
+
+@media (max-width: 365px) {
+    .navbar-inverse .navbar-header .navbar-brand{
+        width:75%;
+    }
+
+    .navbar-inverse .navbar-header .navbar-brand img{
+        width:100%;
+    }
+}
+
+/**************** custom button ****************/
+.btn-custom { 
+	background-color: hsl(38, 100%, 96%) !important; 
+	background-repeat: repeat-x; 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffe534", endColorstr="#f49c00"); 
+	background-image: -khtml-gradient(linear, left top, left bottom, from(#ffe534), to(#f49c00)); 
+	background-image: -moz-linear-gradient(top, #ffe534, #f49c00); 
+	background-image: -ms-linear-gradient(top, #ffe534, #f49c00); 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffe534), color-stop(100%, #f49c00)); 
+	background-image: -webkit-linear-gradient(top, #ffe534, #f49c00); 
+	background-image: -o-linear-gradient(top, #ffe534, #f49c00); 
+	background-image: linear-gradient(#ffe534, #f49c00); 
+	border-color: #e5c700 #e5c700 hsl(38, 100%, 35%); 
+	color: #333 !important; 
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.33); 
+	-webkit-font-smoothing: antialiased; 
+}
+
+.top-image {
+    position:relative;
+}
+
+.image-overlay{
+	background: url("../images/overlay-slide.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+	z-index:0;
+}

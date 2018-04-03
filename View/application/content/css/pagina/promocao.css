@@ -1,0 +1,75 @@
+#promocao-box {
+    background-image: url('../../images/overlay-slide.png'), url('../../images/topo/promo.jpg');
+    background-size: auto auto, cover;
+    display:block;
+    height:350px;
+}
+
+    #promocao-box .seta1 {
+        background-image: url('../../images/seta1.png');
+        background-repeat: no-repeat;
+        background-position: 65% bottom;
+    }
+
+    #promocao-box .seta2 {
+        background-image: url('../../images/seta2.png');
+        background-repeat: no-repeat;
+        background-position: 35% bottom;
+    }
+
+    #promocao-box .promo-image {
+        margin-top:30px;
+    }
+
+        #promocao-box .promo-image.visible-xs {
+            padding: 0 20px;
+        }
+
+    #promocao-box .texto-info {
+        font-family: 'Bad Script', sans-serif;
+        color:#ffffff;
+        font-size:32px;
+        padding: 25px 65px;
+        margin:0;
+    }
+
+#fake-space {
+    display:block;
+    height:310px;
+}
+
+@media (max-width: 1200px) {
+    #promocao-box .texto-info {
+        font-size:28px
+    }
+
+    #promocao-box .seta1 {
+        background-position: 78% bottom;
+    }
+
+    #promocao-box .seta2 {
+        background-position: 20% bottom;
+    }
+}
+
+@media (max-width: 992px) {
+    #promocao-box .texto-info {
+        font-size:24px
+    }
+
+    #promocao-box .texto-info {
+        padding:10px 20px;
+    }
+
+    #promocao-box .seta1 {
+        background: none;
+    }
+    
+    #promocao-box .seta2 {
+        background-position: 8% bottom;
+    }
+
+    #fake-space {
+        height:250px;
+    }
+}

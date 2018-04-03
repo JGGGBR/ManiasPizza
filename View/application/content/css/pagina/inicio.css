@@ -1,0 +1,134 @@
+#submenu {
+    margin-top: 85px;
+    margin-bottom: 55px;
+}
+
+    #submenu .column {
+    }
+
+    #submenu .box {
+        display: inline-block;
+    }
+
+        #submenu .box * {
+            transition: all .2s;
+            -moz-transition: all .2s;
+            -webkit-transition: all .2s;
+            -o-transition: all .2s;
+        }
+
+        #submenu .box img {
+            float: left;
+            margin-right: 20px;
+        }
+
+        #submenu .box .descricao {
+            float: right;
+        }
+
+    #submenu .box-a .descricao {
+        width: 128px;
+    }
+
+    #submenu .box-b .descricao {
+        width: 136px;
+    }
+
+    #submenu .box-c .descricao {
+        width: 145px;
+    }
+
+    #submenu .box .descricao p {
+        font-family: 'Istok Web', sans-serif;
+        font-size: 17px;
+        color: #333333;
+        text-shadow: 0 0 2px #D0AEAE;
+        line-height: 1.4em;
+    }
+
+    #submenu .box:hover img {
+        margin-right: 15px;
+        margin-left: 5px;
+    }
+
+    #submenu .box .descricao .btn {
+        display: inline-block;
+        color: #875008 !important;
+        font-size: 15px;
+        line-height: 1.3em;
+        padding: 6px 20px;
+    }
+
+        #submenu .box .descricao .btn:hover {
+            color: #704002 !important;
+            text-shadow: 0 0 1px #c77000;
+        }
+
+    #submenu .box:hover .descricao .btn {
+        box-shadow: 1px 2px 2px #999999;
+    }
+
+@media (max-width: 1200px) {
+    #submenu .column {
+        padding-left: 8px;
+        padding-right: 0;
+    }
+
+    #submenu .box img {
+        margin-right: 10px;
+    }
+
+    #submenu .box:hover img {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #submenu .box .descricao p {
+        font-size: 15px;
+    }
+
+    #submenu .box-a .descricao {
+        width: 110px;
+    }
+
+    #submenu .box-b .descricao {
+        width: 118px;
+    }
+
+    #submenu .box-c .descricao {
+        width: 122px;
+    }
+}
+
+@media (max-width: 992px) {
+    #submenu .column {
+        margin-bottom: 40px;
+    }
+
+    #submenu .box .descricao {
+        width: auto;
+        margin-left:50px;
+    }
+}
+
+@media (max-width: 768px) {
+    #submenu {
+        margin-top: 40px;
+    }
+
+        #submenu .box {
+            display: table;
+            margin: 0 auto;
+            width: auto;
+            text-align: center;
+        }
+
+            #submenu .box img {
+                float: none;
+            }
+
+            #submenu .box .descricao {
+                width: 100%;
+                margin-left: 0;
+            }
+}
